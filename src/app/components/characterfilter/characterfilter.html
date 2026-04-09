@@ -1,0 +1,36 @@
+<div class="container">
+  <h2>Harry Potter Characters By House</h2>
+
+  <mat-form-field appearance="fill">
+    <mat-label>Select House</mat-label>
+    <mat-select [(ngModel)]="selectedHouse" (selectionChange)="onHouseChange()">
+      @for (house of houses; track house) {
+        <mat-option [value]="house">{{ house }}</mat-option>
+      }
+    </mat-select>
+  </mat-form-field>
+
+  <div class="card-grid">
+    @for (character of characters; track character.id) {
+      <mat-card class="character-card">
+        <img
+          mat-card-image
+          [src]="character.image || 'https://via.placeholder.com/250x300?text=No+Image'"
+          [alt]="character.name"
+        />
+
+        <mat-card-content>
+          <h3>{{ character.name }}</h3>
+          <p>{{ character.house || 'No House' }}</p>
+          <p>Actor: {{ character.actor }}</p>
+        </mat-card-content>
+
+        <mat-card-actions>
+          <a [routerLink]="['/character', character.id]">
+            <button mat-button color="primary">View Details</button>
+          </a>
+        </mat-card-actions>
+      </mat-card>
+    }
+  </div>
+</div>
