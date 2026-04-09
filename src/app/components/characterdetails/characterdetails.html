@@ -9,14 +9,15 @@
 
         <div class="details-text">
           <h2>{{ character.name }}</h2>
-          <p><strong>Species:</strong> {{ character.species }}</p>
+          <p><strong>Species:</strong> {{ character.species || 'Unknown' }}</p>
           <p><strong>House:</strong> {{ character.house || 'No House' }}</p>
           <p><strong>Wizard:</strong> {{ character.wizard }}</p>
-          <p><strong>Ancestry:</strong> {{ character.ancestry }}</p>
-          <p><strong>Actor:</strong> {{ character.actor }}</p>
-          <p><strong>Wand Wood:</strong> {{ character.wand.wood }}</p>
-<p><strong>Wand Core:</strong> {{ character.wand.core }}</p>
-<p><strong>Wand Length:</strong> {{ character.wand.length }}</p>
+          <p><strong>Ancestry:</strong> {{ character.ancestry || 'Unknown' }}</p>
+          <p><strong>Actor:</strong> {{ character.actor || 'Unknown' }}</p>
+          <p><strong>Wand Wood:</strong> {{ character.wand?.wood || 'Unknown' }}</p>
+          <p><strong>Wand Core:</strong> {{ character.wand?.core || 'Unknown' }}</p>
+          <p><strong>Wand Length:</strong> {{ character.wand?.length || 'Unknown' }}</p>
+        </div>
       </div>
     </mat-card>
   </div>

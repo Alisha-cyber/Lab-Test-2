@@ -1,59 +1,71 @@
-# 101399472LabTest2Comp3133
+Harry Potter Character Explorer
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.2.7.
+This project is an Angular-based web application developed for COMP3133 Lab Test 2. It displays characters from the Harry Potter universe using a public API and allows users to explore, filter, and view detailed information.
 
-## Development server
+📌 App Description
 
-To start a local development server, run:
+The application fetches character data from the Harry Potter API and presents it in an interactive and user-friendly interface using Angular and Angular Material.
 
-```bash
-ng serve
-```
+Users can:
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+View all characters
+Filter characters by Hogwarts house
+View detailed information about each character
+Features Implemented
+ Character List
+Displays all characters
+Shows name, house, and image
+ Filter by House
+Dropdown selection for:
+Gryffindor
+Slytherin
+Hufflepuff
+Ravenclaw
+Displays filtered characters
+ Character Details
+Displays:
+Name
+Species
+House
+Wizard status
+Ancestry
+Actor
+Wand details (wood, core, length)
+Image
+ UI Design
+Built using Angular Material
+Responsive card layout
+ Live Application
 
-## Code scaffolding
+ https://101399472-lab-test2-comp3133.vercel.app
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+ Screenshots
+🔹 Character List
 
-```bash
-ng generate component component-name
-```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+Displays all characters with name, house, and image.
 
-```bash
-ng generate --help
-```
+🔹 Filter by House
 
-## Building
+Allows users to filter characters based on their Hogwarts house.
 
-To build the project run:
+🔹 Character Details
 
-```bash
-ng build
-```
+Shows complete information about a selected character.
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+ Instructions to Run the Project
+1. Clone the repository
+git clone https://github.com/Alisha-cyber/Lab-Test-2.git
+cd Lab-Test-2
+2. Install dependencies
+npm install
+3. Run the application
+ng serve -o
+4. Open browser
+http://localhost:4200/
+🛠️ Technologies Used
+Angular 21
+Angular Material
+TypeScript
+HTML / LESS
+Vercel (Deployment)
